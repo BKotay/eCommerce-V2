@@ -16,7 +16,7 @@ const db = mysql2.createConnection({
 })
 
 app.get('/', (req, res) => {
-    return res.json("Hold");
+    return res.json("Working!");
 })
 
 app.get('/productinfo', (req, res)=>{
@@ -31,3 +31,7 @@ app.get('/productinfo', (req, res)=>{
 app.listen(3000, ()=>{
     console.log("listening")
 })
+
+//dotenv = config will read your env files, parse the contents, assign the process.env and return an object with an parsed key containing the loaded content or error key if failed.
+
+//cors = this allows a browser to request resources from a server on a different domain

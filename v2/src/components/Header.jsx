@@ -18,7 +18,7 @@ const Header = () => {
           <img src="/images/header-logo.png" alt="Header Logo" className="header-image" />
         </Link>
 
-        {/* Hamburger Icon (only visible on mobile) */}
+        {/* If isOpen is true, it adds the class 'open' to the className. If isOpen is false, it adds an empty string '', which means no extra class will be applied. */}
         <div className="hamburger" onClick={toggleMenu}>
           <div className="line"></div>
           <div className="line"></div>
